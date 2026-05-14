@@ -2,8 +2,12 @@
   "name": "chess-com-analysis-root",
   "version": "1.0.0",
   "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
   "scripts": {
-    "build": "cd frontend && npm install && npm run build",
-    "install": "cd frontend && npm install && cd ../backend && npm install"
+    "build": "npm run build --workspace=frontend",
+    "install-all": "npm install"
   }
 }

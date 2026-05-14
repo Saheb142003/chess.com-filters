@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "buildCommand": "cd frontend && npm install && npm run build",
   "outputDirectory": "frontend/dist",
   "rewrites": [
     {
@@ -9,6 +8,12 @@
     },
     {
       "source": "/(.*)",
+      "destination": "/frontend/$1",
+      "check": true
+    },
+    {
+      "source": "/(.*)",
+      "status": 404,
       "destination": "/frontend/index.html"
     }
   ],
