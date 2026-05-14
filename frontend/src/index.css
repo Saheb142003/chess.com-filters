@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-dark: #312e2b;
+  --bg-sidebar: #262421;
+  --accent-green: #81b64c;
+  --accent-green-hover: #769656;
+  --text-main: #ffffff;
+  --text-muted: #989795;
+  --glass-bg: rgba(49, 46, 43, 0.8);
+  --glass-border: rgba(255, 255, 255, 0.05);
+  --success: #81b64c;
+  --danger: #fa312d;
+  --card-bg: #262421;
+  --card-hover: #3c3934;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--text-main);
+  letter-spacing: -0.05em;
+}
+
+.title span {
+  color: var(--accent-green);
+}
+
+.search-box {
+  display: flex;
+  gap: 0;
+  max-width: 500px;
+  margin: 0 auto 2rem;
+  background: var(--bg-sidebar);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+}
+
+.search-box input {
+  flex: 1;
+  padding: 1rem 1.25rem;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+.search-box button {
+  padding: 0 1.5rem;
+  background: var(--accent-green);
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.search-box button:hover {
+  background: var(--accent-green-hover);
+}
+
+.search-box button:disabled {
+  opacity: 0.7;
+  background: #4a4845;
+}
+
+/* Main Layout */
+.main-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.sidebar {
+  background: var(--bg-sidebar);
+  padding: 1.5rem;
+  border-radius: 8px;
+  position: sticky;
+  top: 1.5rem;
+  max-height: calc(100vh - 3rem);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #4a4845 transparent;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #4a4845;
+  border-radius: 3px;
+}
+
+.filter-container {
+  margin-bottom: 1.5rem;
+}
+
+.filter-title {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Result Buttons */
+.result-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.result-btn {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  color: var(--text-main);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  transition: background 0.1s;
+}
+
+.result-btn:hover {
+  background: var(--card-hover);
+}
+
+.result-btn.active {
+  background: var(--accent-green);
+  color: white;
+}
+
+/* Country List */
+.countries-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.country-item {
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.1s;
+}
+
+.country-item:hover {
+  background: var(--card-hover);
+}
+
+.country-item.active {
+  background: #3c3934;
+  border-left: 4px solid var(--accent-green);
+}
+
+.flag-box {
+  width: 28px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.country-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  flex: 1;
+  color: var(--text-main);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.country-stats {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 700;
+  display: flex;
+  gap: 8px;
+}
+
+/* Content Area */
+.content-area {
+  min-width: 0;
+}
+
+/* Game Cards */
+.game-card {
+  background: var(--bg-sidebar);
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  padding: 1.25rem;
+  transition: background 0.2s;
+  border: 1px solid transparent;
+}
+
+.game-card:hover {
+  background: var(--card-hover);
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.opponent-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.game-result-indicator {
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+
+.indicator-win { background: var(--success); color: white; }
+.indicator-loss { background: var(--danger); color: white; }
+.indicator-draw { background: #4a4845; color: white; }
+
+.rating-badge {
+  padding: 2px 6px;
+  background: rgba(0,0,0,0.2);
+  border-radius: 3px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.view-btn {
+  padding: 8px 16px;
+  background: #3c3934;
+  color: white;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.view-btn:hover {
+  background: #4a4845;
+}
+
+/* Stats Header */
+.stats-banner {
+  background: var(--bg-sidebar);
+  padding: 1.25rem 2rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Loader */
+.loader-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 0;
+  color: var(--text-muted);
+}
+
+.chess-loader {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #4a4845;
+  border-top-color: var(--accent-green);
+  border-radius: 50%;
+  animation: spin 1s infinite linear;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 1024px) {
+  .main-layout {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    position: relative;
+    top: 0;
+    max-height: none;
+  }
+}
