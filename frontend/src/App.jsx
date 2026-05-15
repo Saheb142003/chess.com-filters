@@ -3,6 +3,19 @@ import axios from "axios";
 import CountryFilter from "./components/CountryFilter";
 import GameList from "./components/GameList";
 
+// Clean relative path works everywhere thanks to Vite Proxy (dev) and Vercel Rewrites (prod)
+const API_BASE_URL = '/api/chess';
+
+// King Logo SVG component
+const KingLogo = () => (
+  <svg width="48" height="48" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ marginRight: '18px' }}>
+    <path d="M50 10V22M44 16H56" stroke="var(--accent-green)" strokeWidth="6" strokeLinecap="round"/>
+    <path d="M50 25C42 25 35 30 35 40C35 45 40 48 50 48C60 48 65 45 65 40C65 30 58 25 50 25Z" fill="var(--accent-green)"/>
+    <path d="M25 50L35 75H65L75 50L60 60L50 50L40 60L25 50Z" fill="var(--accent-green)"/>
+    <path d="M30 80H70V90H30V80Z" fill="var(--accent-green)"/>
+  </svg>
+);
+
 function App() {
   const [username, setUsername] = useState("");
   const [data, setData] = useState({});
@@ -22,9 +35,7 @@ function App() {
     setSelectedType("");
     setOpponentQuery("");
     try {
-      const res = await axios.get(
-        `http://localhost:5000/api/chess/${username}`
-      );
+      const res = await axios.get(`${API_BASE_URL}/${username}`);
       setData(res.data);
       if (Object.keys(res.data).length === 0) {
         setError("No games found for this user in recent archives.");
@@ -69,8 +80,9 @@ function App() {
 
   return (
     <div className="container">
-      <header>
-        <h1 className="title">Chess.com <span>Analysis</span></h1>
+      <header style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '2.5rem' }}>
+        <KingLogo />
+        <h1 className="title" style={{ margin: 0 }}>Chess.com <span>Analysis</span></h1>
       </header>
 
       <div className="search-box">
