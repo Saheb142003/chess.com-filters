@@ -1,24 +1,31 @@
 import axios from "axios";
 
+// Chess.com strongly enforces User-Agent headers, especially from cloud IPs like Render.
+const chessApi = axios.create({
+  headers: {
+    "User-Agent": "ChessCountryFilterApp/1.0 (https://github.com/Saheb142003/chess.com-countryfilters)"
+  }
+});
+
 const countryCache = new Map();
 
 async function getPlayerArchives(username) {
-  const archivesRes = await axios.get(
+  const archivesRes = await chessApi.get(
     "https://api.chess.com/pub/player/" + username + "/games/archives"
   );
-  return archivesRes.data.archives;
+  return archivesRes.data.archives || [];
 }
 
 async function getGamesFromArchive(url) {
-  const res = await axios.get(url);
-  return res.data.games;
+  const res = await chessApi.get(url);
+  return res.data.games || [];
 }
 
 async function getOpponentCountry(oppo) {
   if (countryCache.has(oppo)) return countryCache.get(oppo);
 
   try {
-    const profileRes = await axios.get("https://api.chess.com/pub/player/" + oppo);
+    const profileRes = await chessApi.get("https://api.chess.com/pub/player/" + oppo);
     const countryUrl = profileRes.data.country;
     if (!countryUrl) return "Unknown";
     const parts = countryUrl.split("/");
