@@ -2,8 +2,15 @@
   "name": "chess-com-analysis-root",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "cd frontend && npm install && npm run build",
     "install": "cd frontend && npm install && cd ../backend && npm install"
+  },
+  "dependencies": {
+    "axios": "^1.16.1",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "dotenv": "^16.4.5"
   }
 }
