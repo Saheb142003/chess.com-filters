@@ -1,14 +1,21 @@
 {
   "version": 2,
   "outputDirectory": "dist",
+  "functions": {
+    "api/index.js": {
+      "runtime": "vercel-node@latest",
+      "memory": 1024,
+      "maxDuration": 10
+    }
+  },
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "api/index.js"
+      "destination": "/api"
     },
     {
       "source": "/(.*)",
-      "destination": "index.html"
+      "destination": "/index.html"
     }
   ]
 }
