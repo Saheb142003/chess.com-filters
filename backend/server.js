@@ -3,16 +3,28 @@ import cors from "cors";
 import dotenv from "dotenv";
 import chessRouter from "./routes/chessRoutes.js";
 
-const app = express();
-
 dotenv.config();
-const PORT = process.env.PORT;
 
-app.use(cors());
+const app = express();
+const PORT = process.env.PORT || 5000;
+
+// Allow Netlify to talk to Render
+app.use(cors({
+  origin: "*", // In production, you can replace this with your netlify URL
+  methods: ["GET", "POST"]
+}));
+
 app.use(express.json());
 
 app.use("/api/chess", chessRouter);
 
-app.listen(PORT, () => {
-  console.log("Server running on port", { PORT });
+// Health check for Render's zero-downtime deploys
+app.get("/", (req, res) => {
+  res.send("Chess Analysis Backend is running!");
 });
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
+
+export default app;
