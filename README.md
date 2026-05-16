@@ -1,5 +1,8 @@
 # ♟️ Chess.com Global Analysis Dashboard
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/analyzechess/deploy-status)](https://analyzechess.netlify.app)
+> **Live Demo:** [analyzechess.netlify.app](https://analyzechess.netlify.app)
+
 > **Unleash Your Regional Dominance. Analyze Your Global Performance with Precision.**
 
 Welcome to the ultimate scouting tool for Chess.com enthusiasts. This dashboard isn't just a filter; it's a high-performance engine designed to dissect your chess history across every border, time control, and opponent.
