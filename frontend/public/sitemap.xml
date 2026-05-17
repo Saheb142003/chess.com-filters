@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Primary Production URL -->
+  <url>
+    <loc>https://analyzechess.netlify.app/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <!-- Alternate mirror links to prevent duplicate indexing issues and rank both -->
+    <xhtml:link rel="alternate" hreflang="en" href="https://analyzechess.netlify.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saheb142003.netlify.app/"/>
+  </url>
+
+  <!-- Mirror/Alternative URL -->
+  <url>
+    <loc>https://saheb142003.netlify.app/</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://analyzechess.netlify.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://saheb142003.netlify.app/"/>
+  </url>
+
+</urlset>

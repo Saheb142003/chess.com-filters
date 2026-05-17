@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Direct search engine crawlers straight to your sitemap to index both domains instantly
+Sitemap: https://analyzechess.netlify.app/sitemap.xml

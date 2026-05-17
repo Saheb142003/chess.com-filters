@@ -41,8 +41,20 @@ function App() {
     return () => clearInterval(interval);
   }, [serverReady]);
 
-  const fetchGames = async () => {
-    if (!username) return;
+  // Deep-Linking & Auto-Loading query parameters (?username=xxx)
+  useEffect(() => {
+    if (!serverReady) return;
+    const params = new URLSearchParams(window.location.search);
+    const userParam = params.get("username");
+    if (userParam) {
+      setUsername(userParam);
+      fetchGames(userParam);
+    }
+  }, [serverReady]);
+
+  const fetchGames = async (userToFetch = username) => {
+    const targetUser = typeof userToFetch === "string" ? userToFetch : username;
+    if (!targetUser) return;
     setLoading(true);
     setError("");
     setSelectedCountry("");
@@ -53,7 +65,7 @@ function App() {
     setOpponentQuery("");
     try {
       const res = await axios.get(
-        `${API_URL}/api/chess/${username}`
+        `${API_URL}/api/chess/${targetUser}`
       );
       setData(res.data);
       if (Object.keys(res.data).length === 0) {

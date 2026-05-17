@@ -1,114 +1,96 @@
-# ♟️ Chess.com Global Analysis Dashboard (by saheb423003 / saheb142003)
+# ♟️ Chess.com Global Analysis Dashboard
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/analyzechess/deploy-status)](https://analyzechess.netlify.app)
-[![GitHub stars](https://img.shields.io/github/stars/saheb142003/chess.com-countryfilters?style=flat-square&color=2ea44f)](https://github.com/saheb142003/chess.com-countryfilters)
-[![GitHub forks](https://img.shields.io/github/forks/saheb142003/chess.com-countryfilters?style=flat-square&color=2ea44f)](https://github.com/saheb142003/chess.com-countryfilters/network)
-[![SEO Fully Optimized](https://img.shields.io/badge/SEO-Infinite%20Optimized-brightgreen?style=flat-square)](#-infinite-seo-metadata)
-[![Developer](https://img.shields.io/badge/Developer-Md%20Sahebuddin%20Ansari-blue?style=flat-square)](https://github.com/saheb142003)
+<p align="center">
+  <a href="https://github.com/saheb142003/chess.com-countryfilters">
+    <img src="https://img.shields.io/github/stars/saheb142003/chess.com-countryfilters?style=for-the-badge&color=2ea44f&label=⭐%20Repo%20Stars" alt="GitHub Stars" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="#-creator--credits">
+    <img src="https://img.shields.io/badge/🛡️%20Designed%20By-saheb423003-blue?style=for-the-badge" alt="Creator Badge" />
+  </a>
+</p>
 
-> 🚀 **Live Production App:** [analyzechess.netlify.app](https://analyzechess.netlify.app)  
-> 🔗 **Alternative Mirror:** [saheb142003.netlify.app](https://saheb142003.netlify.app)
-
----
-
-## 🌍 Unleash Regional Dominance with Professional Chess Analytics
-
-Welcome to the ultimate, high-performance scouting engine for Chess.com players. Created by **Md Sahebuddin Ansari** (internationally known on the web as **saheb423003** and **saheb142003**), this dashboard is engineered to dissect your complete chess history across borders, openings, time controls, and specific rivals.
-
-Whether you want to scout which country's players struggle against your tactical style, isolate your performance in **Blitz**, **Bullet**, or **Rapid**, or track your rating swings against specific openings—this dashboard processes hundreds of matches in parallel to deliver real-time strategic intelligence.
+<h3 align="center">
+  ⚡ <a href="https://analyzechess.netlify.app">Live Web App</a> ⚡ Mirror: <a href="https://saheb142003.netlify.app">saheb142003.netlify.app</a>
+</h3>
 
 ---
 
-## 🏆 Prime Features
+## 🎯 What it Does & Why You Need It
 
-### 🗺️ 1. Global Scouting & Country Mapping
-*   **Real-time Parsing**: Instantly converts Chess.com country URLs into clean country names and high-quality flag indicators.
-*   **Territorial Scorecards**: Track exact Win/Loss/Draw ratios against opponents of any specific nationality.
-
-### 📈 2. Tactical Opening Analytics
-*   **Base Opening Isolation**: Group games dynamically by the main opening played (e.g., *Sicilian Defense*, *Ruy Lopez*, *Queen's Gambit*).
-*   **Opening Win-Rates**: Instantly spot which lines yield your highest success rate.
-
-### ⚡ 3. Multi-Dimensional Dynamic Filters
-*   **Time-Range Isolation**: Filter matches played in the *Last Week*, *Last Month*, or *Last 3 Months*.
-*   **Game-Type Selectors**: Isolate and analyze *Rapid*, *Blitz*, or *Bullet* play formats instantly.
-*   **Combined Search**: Query specific opponents across distinct game speeds and nations with millisecond latency.
-
-### 🎨 4. Premium Dark UI/UX
-*   **Pure Chess.com DNA**: Immersed in chess-themed dark mode palettes, premium glassmorphism surfaces, and classic high-fidelity green win/loss badges.
-*   **Sticky Dynamic Workspace**: A modern sticky-layout sidebar with independent scrolling for high-fidelity desktop presentation.
+Standard stats tell you your rating. This dashboard tells you **where and how** you win. It processes your Chess.com match history to map out geographical advantages, opening performance, and format trends.
 
 ---
 
-## 🛠️ High-Performance Architecture
+## 🚀 Key Features (Click to Expand 👇)
 
-```mermaid
-graph TD
-  A[Netlify Frontend: React + Vite] -- Secure API Request --> B[Render Backend: Node.js + Express]
-  B -- Parallel Promise Batching --> C[Chess.com Official API]
-  C -- Fetch Game Archives --> B
-  B -- Structured Analytics JSON --> A
-```
+<details>
+<summary><b>🌍 1. Geographical Scouting & Country Mapping <code>[Click for Details]</code></b></summary>
+<br />
+<ul>
+  <li><b>Real-Time Parsing:</b> Instantly converts Chess.com country URLs into full country names with high-resolution flag badges.</li>
+  <li><b>Territorial Scorecards:</b> Dissect your exact Win, Loss, and Draw counts against any specific nation on Earth.</li>
+  <li><b>Regional Insights:</b> Discover which countries' tactical styles you dominate and which ones challenge you.</li>
+</ul>
+</details>
 
-### **The Technology Engine**
-*   **Frontend**: React, Vite, and Vanilla CSS with custom theme variables for maximum performance.
-*   **Backend**: Node.js & Express API with a parallel fetching algorithm to retrieve multiple monthly archives simultaneously.
-*   **SEO System**: Integrated JSON-LD structured schema mapping developer profiles (**saheb423003**, **saheb142003**, **Md Sahebuddin Ansari**) directly to search engines.
+<details>
+<summary><b>♟️ 2. Tactical Opening Analytics <code>[Click for Details]</code></b></summary>
+<br />
+<ul>
+  <li><b>Opening Extraction:</b> Automatically groups your match history by base openings played (e.g., <i>Sicilian Defense</i>, <i>Ruy Lopez</i>, <i>Queen's Gambit</i>).</li>
+  <li><b>Win-Rate Calculation:</b> Highlights your precise success rates with each opening setup so you can optimize your opening repertoire.</li>
+  <li><b>Scouting Power:</b> Spot opening patterns that lead to your most successful game configurations.</li>
+</ul>
+</details>
+
+<details>
+<summary><b>⚡ 3. Multi-Variant Speed Isolation <code>[Click for Details]</code></b></summary>
+<br />
+<ul>
+  <li><b>One-Tap Speed Switch:</b> Instantly isolate your performances across <b>Blitz</b>, <b>Bullet</b>, and <b>Rapid</b> variants.</li>
+  <li><b>Rating Progression:</b> Track your rating fluctuations (+/-) for each variant with crystal-clear indicator badges.</li>
+</ul>
+</details>
+
+<details>
+<summary><b>📅 4. Dynamic Time Range Scoping <code>[Click for Details]</code></b></summary>
+<br />
+<ul>
+  <li><b>Active Growth Scope:</b> Toggle between the <b>Last Week</b>, <b>Last Month</b>, or <b>Last 3 Months</b> of play history.</li>
+  <li><b>Performance Evolution:</b> See if your tactical adjustments are leading to an upward trend over time.</li>
+</ul>
+</details>
+
+<details>
+<summary><b>🔍 5. Dual Search Engines <code>[Click for Details]</code></b></summary>
+<br />
+<ul>
+  <li><b>Millisecond Latency:</b> Query specific opponent usernames dynamically.</li>
+  <li><b>Geographical Filter:</b> Search and isolate specific country statistics in real-time.</li>
+</ul>
+</details>
+
+<details>
+<summary><b>🎨 6. Premium Chess.com DNA Interface <code>[Click for Details]</code></b></summary>
+<br />
+<ul>
+  <li><b>Authentic Aesthetics:</b> Immersed in Chess.com’s signature deep-charcoal palette with glowing green accents.</li>
+  <li><b>Glassmorphism Design:</b> Features futuristic semi-transparent cards and indicator bars.</li>
+  <li><b>Sticky Sidebar Workspace:</b> Modern desktop layout with independent scrolling lists for comfortable game scouting.</li>
+</ul>
+</details>
 
 ---
 
-## 🚀 Unified Netlify + Render Deployment Blueprint
+## 💎 Creator & Credits
 
-Follow this bulletproof guide to deploy the entire application in under 5 minutes with zero configuration errors.
+Designed and engineered with absolute focus by **Md Sahebuddin Ansari** (alias **saheb423003** / **saheb142003**).
 
-### 🟢 Part A: Deploy the Backend on Render
-1.  Sign in to [Render.com](https://render.com) and click **New > Web Service**.
-2.  Connect your GitHub repository: `saheb142003/chess.com-countryfilters`.
-3.  Configure the following settings:
-    *   **Name**: `chess-com-countryfilters`
-    *   **Root Directory**: `backend`
-    *   **Runtime**: `Node`
-    *   **Build Command**: `npm install`
-    *   **Start Command**: `npm start`
-4.  Click **Deploy Web Service**. Once live, Render will provide your primary backend URL:
-    *   *Example:* `https://chess-com-countryfilters.onrender.com`
+*   **GitHub**: [@saheb142003](https://github.com/saheb142003)
+*   **Portfolio**: [saheb142003.netlify.app](https://saheb142003.netlify.app)
 
----
-
-### 🔵 Part B: Deploy the Frontend on Netlify
-1.  Sign in to [Netlify.com](https://netlify.com) and click **Add new site > Import an existing project**.
-2.  Link your GitHub repository.
-3.  Netlify will automatically detect the root **`netlify.toml`** file, which configures:
-    *   **Publish Directory**: `frontend/dist`
-    *   **Build Command**: `cd frontend && npm install && npm run build`
-4.  **Crucial Step (Environment Variables)**:
-    *   Go to **Site Configuration > Environment Variables** on Netlify.
-    *   Add a new environment variable:
-        *   **Key**: `VITE_API_URL`
-        *   **Value**: `https://your-render-app-url.onrender.com` (Use the URL from Part A).
-5.  Click **Deploy Site**. Your beautiful front-end is live and linked!
-
----
-
-## 🔍 Infinite SEO Metadata & Search Keywords
-
-To guarantee first-page ranking for the developer and this application, this repository is optimized for the following search criteria:
-
-*   **Primary Names**: `saheb423003`, `saheb142003`, `Md Sahebuddin Ansari`, `Sahebuddin Ansari`.
-*   **Core Keywords**: `analyze chess`, `chess country filter`, `chess global performance dashboard`, `chess.com regional stats`, `saheb chess filter`, `chess.com country analyzer`, `saheb142003 netlify`.
-*   **Tech Stack Keywords**: `vite react chess dashboard`, `node express chess api`, `render chess backend`, `netlify chess app`.
-
----
-
-## 💎 Lead Architect & Developer
-
-### **Md Sahebuddin Ansari**
-Designed, developed, and deployed with absolute passion. Connect with me and explore my other premium creations:
-
-[![GitHub Badge](https://img.shields.io/badge/GitHub-saheb142003-181717?style=for-the-badge&logo=github)](https://github.com/saheb142003)
-[![Netlify Badge](https://img.shields.io/badge/Netlify-saheb142003.netlify.app-00C7B7?style=for-the-badge&logo=netlify)](https://saheb142003.netlify.app)
-
-> *"In chess, as in code, every single move must have a definitive purpose. This dashboard is the ultimate reflection of that philosophy."*
+> *"In chess, as in code, every single move must have a purpose. This dashboard is the ultimate reflection of that philosophy."*
 
 ---
 
