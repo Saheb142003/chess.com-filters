@@ -19,7 +19,7 @@ build/
 out/
 .next/
 
-# IDE and System files
+# IDE, OS, and Editor files
 .vscode/
 .idea/
 *.suo
@@ -35,7 +35,15 @@ logs/
 *.log
 npm-debug.log*
 
-# Other
+# Legacy Configurations
+.vercel/
+vercel.json
+
+# Temporary Scripts and Rubbish Files
+copy-og.js
+how_chess_images_work.js
 .cache/
 .npm/
-.vercel/
+.eslintcache
+package-lock.json.backup
+npm-shrinkwrap.json

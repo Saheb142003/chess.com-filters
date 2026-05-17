@@ -126,13 +126,14 @@ function App() {
         <>
           <div className="search-box">
         <input
+          id="chess-username-input"
           type="text"
           placeholder="Chess.com Username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && fetchGames()}
         />
-        <button onClick={fetchGames} disabled={loading}>
+        <button id="analyze-btn" onClick={fetchGames} disabled={loading}>
           {loading ? "..." : "Analyze"}
         </button>
       </div>
@@ -172,6 +173,7 @@ function App() {
           <div className="content-area">
             <div className="local-search-bar" style={{ marginBottom: '1rem' }}>
               <input
+                id="opponent-search-input"
                 type="text"
                 placeholder="Search Opponent Username..."
                 value={opponentQuery}

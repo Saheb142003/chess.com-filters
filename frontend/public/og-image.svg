@@ -1,0 +1,89 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark Modern Background -->
+  <rect width="1200" height="630" fill="#121212"/>
+  
+  <!-- Subtle Glowing Tech Grid -->
+  <path d="M0 100H1200M0 200H1200M0 300H1200M0 400H1200M0 500H1200" stroke="#1A2E1A" stroke-width="2"/>
+  <path d="M200 0V630M400 0V630M600 0V630M800 0V630M1000 0V630" stroke="#1A2E1A" stroke-width="2"/>
+  
+  <!-- Radial Neon Glow Center -->
+  <circle cx="600" cy="315" r="350" fill="url(#neonGlow)" opacity="0.25"/>
+
+  <!-- Left Side: Dashboard Stats Preview Mockup -->
+  <g transform="translate(100, 165)">
+    <!-- Glassmorphism Card 1 -->
+    <rect width="320" height="130" rx="16" fill="#1E1E1E" fill-opacity="0.7" stroke="#2D4D2D" stroke-width="2"/>
+    <text x="30" y="45" fill="#88A088" font-family="system-ui, sans-serif" font-size="14" font-weight="600" letter-spacing="1">GLOBAL WIN RATE</text>
+    <text x="30" y="95" fill="#45A049" font-family="system-ui, sans-serif" font-size="42" font-weight="800">68.4%</text>
+    <!-- Mini chart sparkline -->
+    <path d="M180 85 Q210 55 240 75 T300 45" fill="none" stroke="#45A049" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(100, 335)">
+    <!-- Glassmorphism Card 2 -->
+    <rect width="320" height="130" rx="16" fill="#1E1E1E" fill-opacity="0.7" stroke="#2D4D2D" stroke-width="2"/>
+    <text x="30" y="45" fill="#88A088" font-family="system-ui, sans-serif" font-size="14" font-weight="600" letter-spacing="1">GAMES ANALYZED</text>
+    <text x="30" y="95" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="42" font-weight="800">1,248</text>
+    <!-- Bar chart preview -->
+    <rect x="180" y="75" width="16" height="20" rx="2" fill="#45A049"/>
+    <rect x="205" y="60" width="16" height="35" rx="2" fill="#45A049"/>
+    <rect x="230" y="45" width="16" height="50" rx="2" fill="#45A049"/>
+    <rect x="255" y="30" width="16" height="65" rx="2" fill="#88A088"/>
+    <rect x="280" y="55" width="16" height="40" rx="2" fill="#45A049"/>
+  </g>
+
+  <!-- Right Side: Developer Details & Country Badges -->
+  <g transform="translate(780, 165)">
+    <!-- Glassmorphism Sidebar -->
+    <rect width="320" height="300" rx="16" fill="#1A1A1A" fill-opacity="0.8" stroke="#2D4D2D" stroke-width="2"/>
+    
+    <!-- Country stats item 1 -->
+    <text x="30" y="55" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="16" font-weight="700">🇺🇸 United States</text>
+    <rect x="180" y="40" width="110" height="16" rx="8" fill="#2E2E2E"/>
+    <rect x="180" y="40" width="85" height="16" rx="8" fill="#45A049"/>
+
+    <!-- Country stats item 2 -->
+    <text x="30" y="115" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="16" font-weight="700">🇮🇳 India</text>
+    <rect x="180" y="100" width="110" height="16" rx="8" fill="#2E2E2E"/>
+    <rect x="180" y="100" width="95" height="16" rx="8" fill="#45A049"/>
+
+    <!-- Country stats item 3 -->
+    <text x="30" y="175" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="16" font-weight="700">🇩🇪 Germany</text>
+    <rect x="180" y="160" width="110" height="16" rx="8" fill="#2E2E2E"/>
+    <rect x="180" y="160" width="70" height="16" rx="8" fill="#45A049"/>
+    
+    <!-- Separator -->
+    <line x1="30" y1="215" x2="290" y2="215" stroke="#2D4D2D" stroke-width="2"/>
+
+    <!-- Creator Branding -->
+    <text x="30" y="250" fill="#88A088" font-family="system-ui, sans-serif" font-size="13" font-weight="700" letter-spacing="1">LEAD ARCHITECT</text>
+    <text x="30" y="278" fill="#45A049" font-family="system-ui, sans-serif" font-size="18" font-weight="800">Md Sahebuddin Ansari</text>
+  </g>
+
+  <!-- Center Piece: Big Neon Crown (Chess King) -->
+  <g transform="translate(490, 160)" stroke="#45A049" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Outer Glow -->
+    <path d="M50 10V30M38 20H62" stroke="#2D4D2D" stroke-width="12" stroke-linecap="round"/>
+    <path d="M50 35C35 35 25 45 25 60C25 70 35 75 50 75C65 75 75 70 75 60C75 45 65 35 50 35Z" fill="#1E1E1E" fill-opacity="0.9" stroke="#2D4D2D" stroke-width="12"/>
+    <path d="M10 80L25 120H75L90 80L68 95L50 80L32 95L10 80Z" fill="#1E1E1E" fill-opacity="0.9" stroke="#2D4D2D" stroke-width="12"/>
+
+    <!-- Sharp Center Piece -->
+    <path d="M50 10V30M38 20H62" stroke="#45A049" stroke-width="6"/>
+    <path d="M50 35C35 35 25 45 25 60C25 70 35 75 50 75C65 75 75 70 75 60C75 45 65 35 50 35Z" fill="#1A1A1A" stroke="#45A049" stroke-width="6"/>
+    <path d="M10 80L25 120H75L90 80L68 95L50 80L32 95L10 80Z" fill="#1A1A1A" stroke="#45A049" stroke-width="6"/>
+    <path d="M20 130H80V145H20V130Z" fill="#45A049" stroke="#45A049" stroke-width="4"/>
+  </g>
+
+  <!-- Typography & App Titles -->
+  <text x="600" y="475" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="34" font-weight="900" letter-spacing="2">CHESS.COM GLOBAL ANALYSIS</text>
+  <text x="600" y="520" text-anchor="middle" fill="#88A088" font-family="system-ui, sans-serif" font-size="16" font-weight="700" letter-spacing="4">DEVELOPED BY SAHEB423003 / SAHEB142003</text>
+  <text x="600" y="555" text-anchor="middle" fill="#45A049" font-family="system-ui, sans-serif" font-size="14" font-weight="700" letter-spacing="1">analyzechess.netlify.app</text>
+
+  <!-- Definitions for Gradients -->
+  <defs>
+    <radialGradient id="neonGlow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#45A049" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#121212" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>
